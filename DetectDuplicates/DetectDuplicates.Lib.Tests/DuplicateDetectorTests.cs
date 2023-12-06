@@ -29,14 +29,6 @@ namespace DetectDuplicates.Lib.Tests
         }
 
         [Test]
-        public void TestDuplicateDetector()
-        {
-            var context = TestContext.CurrentContext;
-            TestContext.WriteLine(context.TestDirectory);
-            Assert.Charlie();
-        }
-
-        [Test]
         public void CollectDuplicatesShouldReturnNoDuplicatesForEmptyDirectories()
         {
             var sut = new DuplicateDetector();
